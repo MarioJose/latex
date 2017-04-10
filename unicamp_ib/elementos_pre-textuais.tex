@@ -231,12 +231,38 @@ Key-words:
 %%%%%%%%%%%%%%%%%%%%% Lista de ilustrações (opicional) %%%%%%%%%%%%%%%%%%%%%
 \thispagestyle{empty}
 
-Lista de ilustrações (opicional)
+\renewcommand*{\thepage}{}
+%\renewcommand{\listfigurename}{Lista de imagens}
+\listoffigures
+
+\clearpage
+\renewcommand*{\thepage}{\arabic{page}}
 
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%% Lista de tabelas (opicional) %%%%%%%%%%%%%%%%%%%%%
 \thispagestyle{empty}
 
-Lista de tabelas (opicional)
+\renewcommand*{\thepage}{}
+
+%\renewcommand{\listtablename}{Lista de tabelas}
+\listoftables
+
+\clearpage
+\renewcommand*{\thepage}{\arabic{page}}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%% Sumário %%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+
+\renewcommand*{\thepage}{}
+
+%\renewcommand\contentsname{Índice}
+\tableofcontents
+
+\clearpage
+\renewcommand*{\thepage}{\arabic{page}}
+
+\newpage
 

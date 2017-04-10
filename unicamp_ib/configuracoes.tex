@@ -41,6 +41,20 @@
 \renewcommand{\rmdefault}{ptm}
 
 % Numbering pages
+\makeatletter
+% Page number on head at right
+\renewcommand*{\ps@plain}{%
+  \let\@mkboth\@gobbletwo
+  \def\@oddhead{%
+      \reset@font
+      \hfil
+      \thepage
+    }%
+  \let\@oddfoot\@empty
+  \let\@evenhead\@empty
+  \let\@evenfoot\@oddfoot
+}
+\makeatother
 \pagestyle{plain}
 \pagenumbering{arabic}
 
